@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oriol Monllonch Design</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="../style_page/estilos.css" rel="stylesheet" type="text/css">
+	<link href="../style_page/menu/fonts.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../style_page/main.js"></script>
+</head>
+<body>
+	
+	<header>
+	  <div class="had">
+		  <div class="logo"><a href="index.html"><img src="../Imatges/logo web .png" alt="logo"/></a></div>
+      </div>
+		
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html"><span class="icon-home"></span>HOME</a></li>
+				<li><a href="projects.html"><span class="icon-rocket"></span>PROJECT</a></li>
+				<li><a href="video.html"><span class="icon-youtube"></span>VIDEO</a></li>
+				<li><a href="https://www.designnews.com/"><span class="icon-new-tab"></span>NEWS</a></li>
+				<li><a href="contact_us.html"><span class="icon-mail"></span>CONTACT US</a></li>
+			</ul>
+		</nav>
+	</header>
+<article>
+<div class="div_img_project"><img class="img_project" src="../Imatges/Projects-400x400.png"/>PROJECTS</div>	
+	</article>
+	
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+	  <a href="https://www.facebook.com/oriol.darke.3?lst=100024833538886%3A100024833538886%3A1527584377"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	  <a href="https://www.instagram.com/oriolmonllonch/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	  <a href="https://www.snapchat.com/l/es/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+	  <a href="https://www.pinterest.es/monllonch/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+	  <a href="https://twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+	  <a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+	</div>
+</footer>
+	
+
+	<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides fade");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+		
+var slideIndex1 = 1;
+showSlides1(slideIndex);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex1-1].style.display = "block";  
+  dots[slideIndex1-1].className += " active";
+}
+</script>
+</body>
+</html>
